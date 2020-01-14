@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nueral_network_tutorial:
+    build: .
+    container_name: nueral_network_tutorial
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/app
+    command:
+      jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --NotebookApp.allow_origin='*'
