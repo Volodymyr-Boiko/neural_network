@@ -1,7 +1,7 @@
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    sha: v1.2.0
+    rev: v2.4.0  # Use the ref you want to point at
     hooks:
-    -   id: check-case-conflict
+    -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
     -   id: flake8
